@@ -280,6 +280,8 @@ function patch_system_files() {
         "/sbin/reboot"
         "/sbin/ip link set wlan[0-9] down"
         "/sbin/ip link set wlan[0-9] up"
+        "/sbin/ip link set eth[0-9] down"
+        "/sbin/ip link set eth[0-9] up"
         "/sbin/ip -s a f label wlan[0-9]"
         "/bin/cp /etc/raspap/networking/dhcpcd.conf /etc/dhcpcd.conf"
         "/etc/raspap/hostapd/enablelog.sh"
