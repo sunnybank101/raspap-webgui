@@ -57,7 +57,7 @@ function loadCurrentSettings(strInterface) {
             $.each(v,function(i2,v2) {
                 switch(i2) {
                     case "static":
-                        if(v2 == 'true') {
+                        if(v2 === '1') {
                             $('#'+int+'-static').click();
                             $('#'+int+'-nofailover').click();
                         } else {
@@ -65,7 +65,7 @@ function loadCurrentSettings(strInterface) {
                         }
                     break;
                     case "failover":
-                        if(v2 === 'true') {
+                        if(v2 === '1') {
                             $('#'+int+'-failover').click();
                         } else {
                             $('#'+int+'-nofailover').click();
