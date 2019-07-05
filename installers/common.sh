@@ -4,6 +4,9 @@
 # author: @billz
 # license: GNU General Public License v3.0
 
+#UPDATE_URL="https://github.com/billz/raspap-webgui"
+UPDATE_URL="https://github.com/sunnybank101/raspap-webgui/tree/sunnybank101-multiinterfaces"
+
 raspap_dir="/etc/raspap"
 raspap_user="www-data"
 webroot_dir="/var/www/html"
