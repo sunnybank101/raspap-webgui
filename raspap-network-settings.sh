@@ -1,21 +1,27 @@
 #!/bin/bash
 
-echo "RaspAP Network Settings Capture - for debug purposes"
 
-echo "---------------- dnsmasq ----------------"
+echo "=============================================================================="
+echo "RaspAP Network Settings Capture - for debug purposes"
+echo "=============================================================================="
+
+echo "<<<<<<<<<<<<<<<<<<<<<<<<< dnsmasq >>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
 cat /etc/dnsmasq.conf
-echo "---------------- hostapd ----------------"
+echo "<<<<<<<<<<<<<<<<<<<<<<<<< hostapd >>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
 cat /etc/hostapd/hostapd.conf
-echo "---------------- dhcpcd ----------------"
+echo "<<<<<<<<<<<<<<<<<<<<<<<<< dhcpcd >>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
 cat /etc/dhcpcd.conf
 
-echo "---------------- /etc/raspap/networking ----------------"
+echo "=============================================================================="
+echo "<<<<<<<<<<<<<<<<<<<<<<<<< /etc/raspap/networking >>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
+echo "=============================================================================="
 ls -la  /etc/raspap/networking/
-echo "defaults---------"
+echo "<<<<<<<<<<<<<<<<<<<<<<<<< defaults >>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
 cat /etc/raspap/networking/defaults
-echo "eth0.ini---------"
+echo "<<<<<<<<<<<<<<<<<<<<<<<<< eth0.ini >>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
 cat /etc/raspap/networking/eth0.ini
-echo "wlan0.ini---------"
+echo "<<<<<<<<<<<<<<<<<<<<<<<<< wlan0.ini >>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
 cat /etc/raspap/networking/wlan0.ini
-echo "wlan1.ini---------"
+echo "<<<<<<<<<<<<<<<<<<<<<<<<< wlan1.ini >>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
 cat /etc/raspap/networking/wlan1.ini
+
