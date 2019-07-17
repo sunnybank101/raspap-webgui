@@ -4,7 +4,7 @@ include_once('../../includes/config.php');
 include_once('../../includes/functions.php');
 
 if(isset($_POST['generate']) && isset($_POST['csrf_token']) && CSRFValidate()) {
-    $cnfNetworking = array_diff(scandir(RASPI_CONFIG_NETWORKING, 1),array('..','.'));
+    $cnfNetworking = array_diff(scandir(RASPI_CONFIG_NETWORKING, , SCANDIR_SORT_ASCENDING),array('..','.'));
     $cnfNetworking = array_combine($cnfNetworking,$cnfNetworking);
     $strConfFile = "";
     foreach($cnfNetworking as $index=>$file) {
